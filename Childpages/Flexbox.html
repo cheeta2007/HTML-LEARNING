@@ -23,8 +23,11 @@
         <!-- Already specified in the charset above-->
 
         <style>
-            * {}
-            div {}
+            * {
+                box-sizing: border-box;
+                font-size:2vw;
+            }
+            div {border:thin dotted green}
             .header {}
             .menu {}
             .aside {}
@@ -36,13 +39,13 @@
        <noscript>Running JavaScript Is Not Necessary In This HTML Page ... FYI: Your Feature To Execute Scripts Is Turned Off</noscript>
     </head>
     <body>
-        <header>Flexbox</header>
-        <nav></nav>
-        <aside></aside>
-        <main></main>
-        <section></section>
-        <article></article>
-        <footer></footer>
+        <div><header><h1>Flexbox</h1></header></div>
+        <div><nav><h1>Navigation</h1></nav></div>
+        <div><aside><a>This Is The Aside Space</a></aside></div>
+        <div><main><h1>Main</h1></main></div>
+        <div><section>Section</section></div>
+        <div><article>Article</article></div>
+        <div><footer></footer></div>
     </body>
 
     <footer>
